@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='web1.css'>
+</head>
+
+<body>
+    <div id="sectionviewpage">
+        <div class="flats-view-page">
+            <h1 class="heading"> SUNRISE AVENUE</h1>
+
+            <div class="flats-card d-flex flex-row" onclick="display('section2K')">
+                <img src="https://i.redd.it/sv2pkz4h35r11.jpg" class="image" />
+                <div class="description-card">
+                    <h1 class="category"> <br><br>2 BHK </h1><br><br><br><br><br>
+                    <p class="flat-paragraph">click to check out the details.</p>
+                </div>
+            </div>
+
+            <div class="flats-card d-flex flex-row" onclick="display('section3K')">
+                <img src="https://cdn.decorilla.com/online-decorating/wp-content/uploads/2018/10/modern-interior-design-grey-living-room2.png" class="image" />
+                <div class="description-card">
+                    <h1 class="category">  <br><br>3 BHK </h1><br><br><br><br><br>
+                    <p class="flat-paragraph">click to check out the details.</p>
+                </div>
+            </div>
+
+            <div class="flats-card d-flex flex-row" onclick="display('section4K')">
+                <img src="https://cowhideoutlet.com/media/wysiwyg/modern-interior-design-style.jpg" class="image" />
+                <div class="description-card">
+                    <h1 class="category">  <br><br>4 BHK </h1><br><br><br><br><br>
+                    <p class="flat-paragraph">click to check out the details. </p>
+                </div>
+            </div>
+
+            <a href="index.html">>Back to home page</a>
+        </div>
+    </div>
+
+    <div id="section2K">
+        <div class="detailed-view">
+            <section>
+                <img class="mySlides" src="https://i.redd.it/sv2pkz4h35r11.jpg" style="width:100%">
+                <img class="mySlides" src="https://fthmb.tqn.com/k4Czd-UDSA0xSwGDQhO2vY4AOJE=/5411x3219/filters:fill(auto,1)/GettyImages-494358447-59a2b77ad963ac00116b7e36.jpg" style="width:100%">
+                <img class="mySlides" src="https://www.playchicinteriors.com/wp-content/uploads/2021/06/Interior-Design-Style-Modern-defined.jpg" style="width:100%">
+              </section>
+              
+              <script>
+              // Automatic Slideshow - change image every 3 seconds
+              var myIndex = 0;
+              carousel();
+              
+              function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}
+                x[myIndex-1].style.display = "block";
+                setTimeout(carousel, 2000);
+              }
+              </script>
+
+            <div class="detailed-card">
+                <h1 class="heading"> 2 BHK</h1>
+                <hr / class="line">
+                
+                <p class="description-paragraph">FLAT AREA - 1600 SFT<br><br>KEY FEATURES<br>
+                1.Proper Ventilation<br>2.Advanced Security Features<br>3.Centralised AC and Vacuum system<br>4.Fully Furnished<br>
+                5.Lake View <br>6.Stainless Steel Kitchen with Dishwasher<br><br>
+                COST PER SFT- 4500/- <br><br>What are you waiting for? This is the perfect house for you, go ahead and register now.
+                </p>
+
+                <div class="d-flex flex-row justify-content-center ">
+                    <a href="index2.html"><button class="btn">Register</button></a>
+                    <button class="btn" onclick="display('sectionviewpage')"> Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section3K">
+        <div class="detailed-view">
+            <img src="https://cdn.decorilla.com/online-decorating/wp-content/uploads/2018/10/modern-interior-design-grey-living-room2.png" class="main-image" />
+            <div class="detailed-card">
+                <h1 class="heading"> 3 BHK</h1>
+                <hr / class="line">
+                <p class="description-paragraph">FLAT AREA - 1850 SFT<br><br>KEY FEATURES<br>
+                    1.Proper Ventilation<br>2.Advanced Security Features<br>3.Centralised AC and Vacuum system<br>4.Fully Furnished<br>
+                    5.Lake View <br>6.Stainless Steel Kitchen with Dishwasher<br><br>
+                    COST PER SFT- 4500/- </p>
+
+                <div class="d-flex flex-row justify-content-center ">
+                    <a href="index2.html"><button class="btn">Register</button></a>
+                    <button class="btn" onclick="display('sectionviewpage')"> Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section4K">
+        <div class="detailed-view">
+            <img src="https://cowhideoutlet.com/media/wysiwyg/modern-interior-design-style.jpg" class="main-image" />
+            <div class="detailed-card">
+                <h1 class="heading"> 4 BHK</h1>
+                <hr / class="line">
+                <p class="description-paragraph"> FLAT AREA - 2000 SFT<br><br>This is the luxury segment of the community and has additional features and is the higher end.<br><br>
+                    KEY FEATURES<br>
+                    1.Proper Ventilation<br>2.Advanced Security Features<br>3.Centralised AC and Vacuum system<br>4.Fully Furnished<br>
+                    5.Lake View <br>6.Stainless Steel Kitchen with Dishwasher<br>7.Automation<br>8.Wi-fi<br>9.Kitchen Chimney <br><br>
+                    COST PER SFT- 5000/- </p>
+
+                <div class="d-flex flex-row justify-content-center ">
+                    <a href="index2.html"><button class="btn">Register</button></a>
+                    <button class="btn" onclick="display('sectionviewpage')"> Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
